@@ -19,7 +19,14 @@
           <option ng-repeat="option in extractEnumOptions(param.enumOptions)" value="{{option}}">{{option}}</option>
         </select>
       </span>
+<<<<<<< HEAD
       <input ng-switch-default type="{{param.type}}" class="form-control" ng-model="param.ngModel" ng-model-options="{updateOn: 'blur'}">
+=======
+      <span ng-switch-when="query">
+        <query-based-parameter param="param"></query-based-parameter>
+      </span>
+      <input ng-switch-default type="{{param.type}}" class="form-control" ng-model="param.ngModel">
+>>>>>>> rohithmenon/feature/query_based_parameter
     </span>
   </div>
 </div>
